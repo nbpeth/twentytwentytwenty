@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="twentytwentytwenty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN7-od-89p">
+                                <rect key="frame" x="216" y="243" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezm-ND-R1p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-oR-V10">
+                                <rect key="frame" x="84" y="396" width="153" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="5f1-Jx-lNs"/>
+                                    <constraint firstAttribute="height" constant="50" id="O5z-SC-cl6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOW-P8-Wcy">
+                                <rect key="frame" x="80" y="243" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADB-ms-vn6"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xo1-AA-bhU">
+                                <rect key="frame" x="84" y="504" width="152" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qN7-od-89p" secondAttribute="trailing" constant="56" id="13l-sg-oeB"/>
+                            <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3WU-Qa-2Jx"/>
+                            <constraint firstItem="xo1-AA-bhU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5c2-DE-8RS"/>
+                            <constraint firstItem="FOW-P8-Wcy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="8Sq-nC-i6P"/>
+                            <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PQk-zk-NS1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fYb-oR-V10" secondAttribute="bottom" constant="122" id="cfH-El-tI2"/>
+                            <constraint firstItem="FOW-P8-Wcy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-26" id="cxz-Z2-olX"/>
+                            <constraint firstItem="xo1-AA-bhU" firstAttribute="top" secondItem="fYb-oR-V10" secondAttribute="bottom" constant="58" id="eCZ-ci-ozM"/>
+                            <constraint firstItem="FOW-P8-Wcy" firstAttribute="baseline" secondItem="qN7-od-89p" secondAttribute="baseline" id="oqo-2h-3n3"/>
+                            <constraint firstItem="xo1-AA-bhU" firstAttribute="leading" secondItem="fYb-oR-V10" secondAttribute="leading" id="uaX-LN-BZN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="fYb-oR-V10" id="RLq-hd-bSb"/>
+                        <outlet property="progressView" destination="xo1-AA-bhU" id="oxW-tC-FMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+    </scenes>
+</document>
