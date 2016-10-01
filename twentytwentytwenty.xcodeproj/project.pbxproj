@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C74A5661D9F4D8200ED3849 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74A5651D9F4D8200ED3849 /* NotificationService.swift */; };
+		2C74A5681D9F4D8C00ED3849 /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */; };
 		2CCA83381D9C8AC2003C61A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */; };
 		2CCA833A1D9C8AC2003C61A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83391D9C8AC2003C61A3 /* ViewController.swift */; };
 		2CCA833D1D9C8AC2003C61A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA833B1D9C8AC2003C61A3 /* Main.storyboard */; };
@@ -75,6 +77,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C74A5651D9F4D8200ED3849 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
 		2CCA83341D9C8AC2003C61A3 /* twentytwentytwenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twentytwentytwenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCA83391D9C8AC2003C61A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				2CCA83431D9C8AC2003C61A3 /* Info.plist */,
 				2CCA83821D9C8AE5003C61A3 /* viewControllers */,
 				2CCA83831D9C8B6D003C61A3 /* Timer.swift */,
+				2C74A5651D9F4D8200ED3849 /* NotificationService.swift */,
+				2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */,
 			);
 			path = twentytwentytwenty;
 			sourceTree = "<group>";
@@ -378,7 +384,9 @@
 			files = (
 				2CCA83811D9C8ADF003C61A3 /* MainViewController.swift in Sources */,
 				2CCA833A1D9C8AC2003C61A3 /* ViewController.swift in Sources */,
+				2C74A5681D9F4D8C00ED3849 /* TimeMachine.swift in Sources */,
 				2CCA83381D9C8AC2003C61A3 /* AppDelegate.swift in Sources */,
+				2C74A5661D9F4D8200ED3849 /* NotificationService.swift in Sources */,
 				2CCA83841D9C8B6D003C61A3 /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +663,7 @@
 				2CCA83741D9C8AC2003C61A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CCA83761D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +672,7 @@
 				2CCA83781D9C8AC2003C61A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CCA837A1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +681,7 @@
 				2CCA837C1D9C8AC2003C61A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CCA837D1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwentyUITests" */ = {
 			isa = XCConfigurationList;
@@ -679,6 +690,7 @@
 				2CCA837F1D9C8AC2003C61A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

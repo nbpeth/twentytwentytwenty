@@ -46,39 +46,53 @@ class MainViewController: UIViewController {
     @IBAction func stopWasPressed(sender: AnyObject) {
         restTimer?.stop()
         sessionTimer?.stop()
+        resetProgressBar()
         
     }
     
+
     func createSessionTimer(){
-        progressView.setProgress(0, animated: false)
-        sessionTimer = Timer(duration: sessionDuration, progressBar:progressView, target: self, selector: #selector(MainViewController.updateSessionTimer))
+        resetProgressBar()
+        sessionTimer = Timer(duration: sessionDuration, target: self, selector: #selector(MainViewController.updateSessionTimer))
  
     }
     
     func createRestTimer(){
-        progressView.setProgress(0, animated: false)
-        restTimer = Timer(duration: eyeRestDuration, progressBar: progressView, target: self, selector: #selector(MainViewController.updateRestTimer))
+        resetProgressBar()
+        restTimer = Timer(duration: eyeRestDuration, target: self, selector: #selector(MainViewController.updateRestTimer))
 
     }
     
     func flipTimers(resting:Bool){
         if resting == true{
-            if let stimer = sessionTimer {
-                stimer.stop()
-                }
-
-            createRestTimer()
+            rest()
             
         }
         else{
-            if let rtimer = restTimer {
-                rtimer.stop()
-            }
-            
-            createSessionTimer()
+            wake()
         }
     }
     
+    func rest(){
+        if let stimer = sessionTimer {
+            stimer.stop()
+        }
+        
+        NotificationService().notifyRest()
+        createRestTimer()
+            
+    }
+    
+    func wake(){
+        if let rtimer = restTimer {
+            rtimer.stop()
+        }
+        
+        NotificationService().notifyWake()
+        createSessionTimer()
+    
+    }
+
     func updateProgressBar(value:Float, duration:Float){
         let progress = value < 1 ? 0.0 : (value / duration)
 
@@ -87,8 +101,20 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        progressView.setProgress(0.0, animated: true)
+        resetProgressBar()
         
     }
     
+    func resetProgressBar(){
+        progressView.setProgress(0, animated: false)
+    }
+    
+    //    func createTimer(duration:Int){
+    //        resetProgressBar()
+    //        sessionTimer = Timer(duration: duration, target: self, selector:Selector(updateTimer("")))
+    //    }
+    //    func updateTimer(name:String){
+    //
+    //    }
+    //
 }
