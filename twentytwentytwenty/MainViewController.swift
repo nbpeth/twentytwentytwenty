@@ -26,11 +26,11 @@ class MainViewController: UIViewController, LabelDelegate {
         super.viewDidLoad()
         resetProgressBar()
         timeMachine.labelDelegate = self
-        
     }
     
     func resetProgressBar(){
         progressView.setProgress(0, animated: false)
+        displayLabel.text = "*"
     }
     
     func updateLabel(time:String){

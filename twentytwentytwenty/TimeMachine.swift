@@ -5,16 +5,12 @@ import UIKit
 class TimeMachine {
     var restTimer:Timer?
     var sessionTimer:Timer?
-    var eyeRestDuration:Int = 10
-    var sessionDuration:Int = 20
+    var eyeRestDuration:Int = 1
+    var sessionDuration:Int = 2
     var labelDelegate:LabelDelegate?
     
     static let sharedInstance = TimeMachine()
     private init() {}
-    
-    func updateLabel(){
-        
-    }
     
     @objc func updateSessionTimer(){
         
@@ -25,9 +21,9 @@ class TimeMachine {
                 flipTimers(true)
             }
             else{
-                timer.update()
                 labelDelegate?.updateLabel(String(timer.duration))
                 labelDelegate?.updateProgressBar(Float(duration), duration: Float(sessionDuration))
+                timer.update()
             }
         }
     }
@@ -40,9 +36,9 @@ class TimeMachine {
                 flipTimers(false)
             }
             else{
-                restTimer?.update()
                 labelDelegate?.updateLabel(String(timer.duration))
                 labelDelegate?.updateProgressBar(Float(duration), duration: Float(eyeRestDuration))
+                timer.update()
             }
         }
     }
