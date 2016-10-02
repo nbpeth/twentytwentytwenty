@@ -5,8 +5,8 @@ import UIKit
 class TimeMachine {
     var restTimer:Timer?
     var sessionTimer:Timer?
-    var eyeRestDuration:Int = 1
-    var sessionDuration:Int = 2
+    var eyeRestDuration:Int = 2
+    var sessionDuration:Int = 5
     var labelDelegate:LabelDelegate?
     
     static let sharedInstance = TimeMachine()

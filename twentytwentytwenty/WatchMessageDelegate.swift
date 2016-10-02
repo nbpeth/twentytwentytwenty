@@ -18,8 +18,10 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
                 replyHandler: { response in print(response)},
                 errorHandler: { error in print(error) })
         }
+        else{
+            print("watch is unreachable")
+        }
     }
     
-    
-    
+
 }

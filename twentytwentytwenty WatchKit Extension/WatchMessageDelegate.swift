@@ -15,6 +15,7 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
     }
     
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
         print("got message!")
         print(message)
         

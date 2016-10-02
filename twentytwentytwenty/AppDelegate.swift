@@ -10,6 +10,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         WatchMessageDelegate.sharedInstance.startSession()
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert , UIUserNotificationType.Badge ], categories: nil))
+        application.beginBackgroundTaskWithName("showNotification", expirationHandler: nil)
+
+        
         
         return true
     }
