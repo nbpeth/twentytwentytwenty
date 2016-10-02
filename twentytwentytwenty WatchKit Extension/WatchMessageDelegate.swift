@@ -2,10 +2,12 @@ import WatchConnectivity
 import Foundation
 
 class WatchMessageDelegate: NSObject, WCSessionDelegate {
-    static let sharedInstance = WatchMessageDelegate()
-    private override init() {}
-    
+    var interfaceDelegate: InterfaceDelegate? = nil
     var session:WCSession?
+    
+    init(delegate:InterfaceDelegate){
+        self.interfaceDelegate = delegate
+    }
     
     func activateSession(){
         session = WCSession.defaultSession()
@@ -17,28 +19,36 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
     }
     
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-            replyHandler(["reply":"gotMessage"])
-            print("got message in the watch!")
-            print(message)
-        
+        if let alert = message["alert"] as? String{
+            if alert == "on"{
+                self.interfaceDelegate?.changeState(alert)
+            }
+            else if alert == "off"{
+                self.interfaceDelegate?.changeState(alert)
+
+            }
+            
+        }
     }
     
-    func onMessage(message:String) -> Bool{
-        var timerResponse:Bool = false
+    func onMessage(message:String){
         if session?.reachable == true {
             session?.sendMessage([message:""],
-                                 replyHandler: { response in
-                                    timerResponse = (response["timerResponse"] as? Bool)!
-                                    print(response)},
-                                 errorHandler: { error in print(error) })
+                replyHandler: { response in
+                    if let stateResponse = response["changeState"] as? String {
+                        let state = stateResponse == "0" ? "on" : "off"
+                        self.interfaceDelegate?.changeState(state)
+                }
+                    
+                print(response)},
+                errorHandler: { error in print(error) })
         }
         else{
             print("phone is unreachable")
         }
-        return timerResponse
     }
     
-    func sendTimerMessage(requestMessage:String) -> Bool{
+    func sendTimerMessage(requestMessage:String){
         return onMessage(requestMessage)
     }
 

@@ -14,6 +14,7 @@ class TimeMachine {
     private init() {}
     
     func activate(){
+        NotificationService().notifyTimerStart()
         setActivity(true)
         createRestTimer()
     }
@@ -74,7 +75,6 @@ class TimeMachine {
             rtimer.stop()
         }
         
-        NotificationService().notifyWake()
         createSessionTimer()
         
     }
@@ -97,6 +97,8 @@ class TimeMachine {
     }
     
     func killTimers(){
+        NotificationService().notifyTimerEnd()
+
         setActivity(false)
         restTimer?.stop()
         sessionTimer?.stop()

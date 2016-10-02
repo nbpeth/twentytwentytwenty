@@ -11,14 +11,14 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="twentytwentytwenty_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="136" alignment="left" text="Alert Me" textAlignment="center" id="oRK-pX-ouD"/>
-                        <button width="1" alignment="left" title="Start" id="9gu-Vy-tlB">
+                        <button width="1" alignment="left" id="5Dx-to-uRU">
                             <connections>
-                                <action selector="alertButtonWasPressed" destination="AgC-eL-Hgc" id="pfB-SZ-de7"/>
+                                <action selector="changeStateButtonWasPressed" destination="AgC-eL-Hgc" id="K0E-P5-JqR"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="alertButton" destination="9gu-Vy-tlB" id="Xgn-r4-p0N"/>
+                        <outlet property="changeStateButton" destination="5Dx-to-uRU" id="Fxc-pC-gyR"/>
                     </connections>
                 </controller>
             </objects>

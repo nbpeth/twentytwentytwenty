@@ -8,6 +8,9 @@ class MainViewController: UIViewController, TimeMachineLabelDelegate {
     @IBOutlet weak var displayLabel: UILabel!
     
     @IBAction func startWasPressed(sender: AnyObject) {
+        if timeMachine.isActive() == true {
+            return
+        }
         timeMachine.activate()
     }
     

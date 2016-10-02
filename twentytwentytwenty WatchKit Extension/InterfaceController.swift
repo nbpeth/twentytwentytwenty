@@ -1,20 +1,31 @@
 import WatchKit
 import Foundation
 
+protocol InterfaceDelegate: class{
+    func changeState(state:String)
+}
 
-class InterfaceController: WKInterfaceController {
-    var timerState:Bool?
-    @IBOutlet var alertButton: WKInterfaceButton!
+class InterfaceController: WKInterfaceController, InterfaceDelegate {
+    let states = ["on":"Start","off":"Stop"]
+    var state:Bool = false
+    var messageDelegate:WatchMessageDelegate? = nil
     
-    @IBAction func alertButtonWasPressed() {
-        timerState = WatchMessageDelegate.sharedInstance.onMessage("changeState")
-        print(WatchMessageDelegate.sharedInstance.onMessage("getTimerState"))
+    @IBOutlet var changeStateButton: WKInterfaceButton!
+    
+    @IBAction func changeStateButtonWasPressed() {
+        messageDelegate?.onMessage("changeState")
+        
     }
-    
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        WatchMessageDelegate.sharedInstance.activateSession()
+        messageDelegate = WatchMessageDelegate(delegate: self)
+        messageDelegate?.activateSession()
 
+    }
+    
+    func changeState(state:String){
+        changeStateButton.setTitle(states[state])
     }
 
     override func willActivate() {

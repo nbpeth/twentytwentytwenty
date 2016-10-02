@@ -14,17 +14,14 @@ class NotificationService {
         
         UIApplication.sharedApplication().scheduleLocalNotification(localNote)
     }
+    
+    func notifyTimerStart(){
+        WatchMessageDelegate.sharedInstance.onMessage("off")
+    }
+    
+    func notifyTimerEnd(){
+        WatchMessageDelegate.sharedInstance.onMessage("on")
 
-    func notifyWake(){
-        WatchMessageDelegate.sharedInstance.onMessage("wake up")
-    }
-    
-    func startTimer(){
-        
-    }
-    
-    func endTimer(){
-        
     }
     
 }
