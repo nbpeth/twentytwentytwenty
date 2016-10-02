@@ -7,10 +7,16 @@ class TimeMachine {
     var sessionTimer:Timer?
     var eyeRestDuration:Int = 2
     var sessionDuration:Int = 5
-    var labelDelegate:LabelDelegate?
+    var labelDelegate:TimeMachineLabelDelegate?
+    var active:Bool = false
     
     static let sharedInstance = TimeMachine()
     private init() {}
+    
+    func activate(){
+        setActivity(true)
+        createRestTimer()
+    }
     
     @objc func updateSessionTimer(){
         
@@ -91,8 +97,17 @@ class TimeMachine {
     }
     
     func killTimers(){
+        setActivity(false)
         restTimer?.stop()
         sessionTimer?.stop()
+    }
+    
+    func isActive () -> Bool {
+        return active
+    }
+    
+    func setActivity(active:Bool){
+        self.active = active
     }
 
 }

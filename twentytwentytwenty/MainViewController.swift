@@ -1,19 +1,14 @@
 
 import UIKit
-protocol LabelDelegate:class{
-    func updateLabel(time:String);
-    func updateProgressBar(value:Float, duration:Float);
-    func resetProgressBar();
-}
 
-class MainViewController: UIViewController, LabelDelegate {
+class MainViewController: UIViewController, TimeMachineLabelDelegate {
     let timeMachine = TimeMachine.sharedInstance
     
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var displayLabel: UILabel!
     
     @IBAction func startWasPressed(sender: AnyObject) {
-        timeMachine.createSessionTimer()
+        timeMachine.activate()
     }
     
     @IBAction func stopWasPressed(sender: AnyObject) {

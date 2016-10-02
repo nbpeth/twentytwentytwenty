@@ -10,8 +10,16 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="twentytwentytwenty_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label height="19.5" alignment="left" text="Hey Buddy" id="fo7-x6-knz"/>
+                        <label width="136" alignment="left" text="Alert Me" textAlignment="center" id="oRK-pX-ouD"/>
+                        <button width="1" alignment="left" title="Start" id="9gu-Vy-tlB">
+                            <connections>
+                                <action selector="alertButtonWasPressed" destination="AgC-eL-Hgc" id="pfB-SZ-de7"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="alertButton" destination="9gu-Vy-tlB" id="Xgn-r4-p0N"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

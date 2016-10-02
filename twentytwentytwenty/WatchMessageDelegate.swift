@@ -23,5 +23,23 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
         }
     }
     
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        if message["changeState"] != nil{
+            let timemachine = TimeMachine.sharedInstance
+            if timemachine.isActive() == true {
+                timemachine.killTimers()
+            }
+            else{
+                timemachine.activate()
+            }
+            
+            replyHandler(["timerResponse":timemachine.isActive()])
+        }
+        
+        if message["getTimerState"] != nil{
+            replyHandler(["timerResponse":TimeMachine.sharedInstance.isActive()])
+        }
+    }
+    
 
 }

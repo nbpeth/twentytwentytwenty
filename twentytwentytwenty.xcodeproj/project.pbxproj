@@ -11,6 +11,8 @@
 		2C5D620D1DA019D2009266AC /* WatchMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */; };
 		2C74A5661D9F4D8200ED3849 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74A5651D9F4D8200ED3849 /* NotificationService.swift */; };
 		2C74A5681D9F4D8C00ED3849 /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */; };
+		2CACF1A01DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */; };
+		2CACF1A31DA160E100C5AAE8 /* TimeMachineMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACF1A21DA160E100C5AAE8 /* TimeMachineMonitor.swift */; };
 		2CCA83381D9C8AC2003C61A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */; };
 		2CCA833D1D9C8AC2003C61A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA833B1D9C8AC2003C61A3 /* Main.storyboard */; };
 		2CCA833F1D9C8AC2003C61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA833E1D9C8AC2003C61A3 /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 		2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMessageDelegate.swift; sourceTree = "<group>"; };
 		2C74A5651D9F4D8200ED3849 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
+		2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineLabelDelegate.swift; sourceTree = "<group>"; };
+		2CACF1A21DA160E100C5AAE8 /* TimeMachineMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineMonitor.swift; sourceTree = "<group>"; };
 		2CCA83341D9C8AC2003C61A3 /* twentytwentytwenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twentytwentytwenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCA833C1D9C8AC2003C61A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		2CCA83361D9C8AC2003C61A3 /* twentytwentytwenty */ = {
 			isa = PBXGroup;
 			children = (
+				2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */,
 				2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */,
 				2C74A5651D9F4D8200ED3849 /* NotificationService.swift */,
 				2CCA83831D9C8B6D003C61A3 /* Timer.swift */,
@@ -199,6 +204,7 @@
 				2CCA836F1D9C8AC2003C61A3 /* Info.plist */,
 				2CCA83651D9C8AC2003C61A3 /* Supporting Files */,
 				2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */,
+				2CACF1A21DA160E100C5AAE8 /* TimeMachineMonitor.swift */,
 			);
 			path = "twentytwentytwenty WatchKit Extension";
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CACF1A01DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift in Sources */,
 				2CCA83811D9C8ADF003C61A3 /* MainViewController.swift in Sources */,
 				2C74A5681D9F4D8C00ED3849 /* TimeMachine.swift in Sources */,
 				2CCA83381D9C8AC2003C61A3 /* AppDelegate.swift in Sources */,
@@ -413,6 +420,7 @@
 			files = (
 				2C5D620D1DA019D2009266AC /* WatchMessageDelegate.swift in Sources */,
 				2CCA836C1D9C8AC2003C61A3 /* NotificationController.swift in Sources */,
+				2CACF1A31DA160E100C5AAE8 /* TimeMachineMonitor.swift in Sources */,
 				2CCA836A1D9C8AC2003C61A3 /* ExtensionDelegate.swift in Sources */,
 				2CCA83681D9C8AC2003C61A3 /* InterfaceController.swift in Sources */,
 			);

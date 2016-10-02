@@ -4,7 +4,6 @@ import NotificationCenter
 class NotificationService {
     
     func notifyRest(){
-        WatchMessageDelegate.sharedInstance.onMessage("rest")
         
         let localNote = UILocalNotification()
         localNote.alertBody = "Rest your eyes"
@@ -14,15 +13,18 @@ class NotificationService {
         localNote.fireDate = NSDate().dateByAddingTimeInterval(1)
         
         UIApplication.sharedApplication().scheduleLocalNotification(localNote)
-
-
-        
-        
     }
-    
+
     func notifyWake(){
         WatchMessageDelegate.sharedInstance.onMessage("wake up")
     }
     
+    func startTimer(){
+        
+    }
+    
+    func endTimer(){
+        
+    }
     
 }
