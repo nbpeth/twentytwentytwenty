@@ -2,8 +2,10 @@
 import Foundation
 
 protocol TimeMachineLabelDelegate:class {
-    func updateLabel(time:String);
-    func updateProgressBar(value:Float, duration:Float);
-    func resetProgressBar();
+    
+    func updateLabel(_ time:Int);
+    func updateProgressBar(_ value:Float, duration:Float);
+    func updateUI();
+    func pressButton();
     
 }

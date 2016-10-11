@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C08A3D61DA99A120098A6A3 /* StartButtonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08A3D51DA99A120098A6A3 /* StartButtonCommand.swift */; };
+		2C16301C1DA989BF0080E9D4 /* ButtonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16301B1DA989BF0080E9D4 /* ButtonCommand.swift */; };
+		2C1630201DA997DD0080E9D4 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16301F1DA997DD0080E9D4 /* StartButton.swift */; };
 		2C5D620B1D9FF540009266AC /* WatchMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D620A1D9FF540009266AC /* WatchMessageDelegate.swift */; };
 		2C5D620D1DA019D2009266AC /* WatchMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */; };
 		2C74A5661D9F4D8200ED3849 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74A5651D9F4D8200ED3849 /* NotificationService.swift */; };
 		2C74A5681D9F4D8C00ED3849 /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */; };
+		2C7514721DAAB0C10084BD03 /* StopButtonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7514711DAAB0C10084BD03 /* StopButtonCommand.swift */; };
 		2CACF1A01DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */; };
-		2CACF1A31DA160E100C5AAE8 /* TimeMachineMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACF1A21DA160E100C5AAE8 /* TimeMachineMonitor.swift */; };
+		2CB1AE8B1DAC57D6006EDF10 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB1AE8A1DAC57D6006EDF10 /* CircleProgressView.swift */; };
 		2CCA83381D9C8AC2003C61A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */; };
 		2CCA833D1D9C8AC2003C61A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA833B1D9C8AC2003C61A3 /* Main.storyboard */; };
 		2CCA833F1D9C8AC2003C61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA833E1D9C8AC2003C61A3 /* Assets.xcassets */; };
@@ -28,6 +32,8 @@
 		2CCA836E1D9C8AC2003C61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA836D1D9C8AC2003C61A3 /* Assets.xcassets */; };
 		2CCA83811D9C8ADF003C61A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83801D9C8ADF003C61A3 /* MainViewController.swift */; };
 		2CCA83841D9C8B6D003C61A3 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83831D9C8B6D003C61A3 /* Timer.swift */; };
+		2CFA70A21DAC37D00027D78E /* UpdateButtonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA70A11DAC37D00027D78E /* UpdateButtonCommand.swift */; };
+		2CFA70A41DAC3FF10027D78E /* TimerDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA70A31DAC3FF10027D78E /* TimerDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +86,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C08A3D51DA99A120098A6A3 /* StartButtonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButtonCommand.swift; sourceTree = "<group>"; };
+		2C16301B1DA989BF0080E9D4 /* ButtonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCommand.swift; sourceTree = "<group>"; };
+		2C16301F1DA997DD0080E9D4 /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		2C5D620A1D9FF540009266AC /* WatchMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMessageDelegate.swift; sourceTree = "<group>"; };
 		2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMessageDelegate.swift; sourceTree = "<group>"; };
 		2C74A5651D9F4D8200ED3849 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
+		2C7514711DAAB0C10084BD03 /* StopButtonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopButtonCommand.swift; sourceTree = "<group>"; };
 		2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineLabelDelegate.swift; sourceTree = "<group>"; };
-		2CACF1A21DA160E100C5AAE8 /* TimeMachineMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineMonitor.swift; sourceTree = "<group>"; };
+		2CB1AE8A1DAC57D6006EDF10 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		2CCA83341D9C8AC2003C61A3 /* twentytwentytwenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twentytwentytwenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCA833C1D9C8AC2003C61A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +118,8 @@
 		2CCA836F1D9C8AC2003C61A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CCA83801D9C8ADF003C61A3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2CCA83831D9C8B6D003C61A3 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2CFA70A11DAC37D00027D78E /* UpdateButtonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateButtonCommand.swift; sourceTree = "<group>"; };
+		2CFA70A31DAC3FF10027D78E /* TimerDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7514731DAAB4530084BD03 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				2C16301B1DA989BF0080E9D4 /* ButtonCommand.swift */,
+				2C08A3D51DA99A120098A6A3 /* StartButtonCommand.swift */,
+				2C7514711DAAB0C10084BD03 /* StopButtonCommand.swift */,
+				2CFA70A11DAC37D00027D78E /* UpdateButtonCommand.swift */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		2C7514741DAAB45E0084BD03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA83831D9C8B6D003C61A3 /* Timer.swift */,
+				2C16301F1DA997DD0080E9D4 /* StartButton.swift */,
+				2CFA70A31DAC3FF10027D78E /* TimerDisplay.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		2CCA832B1D9C8AC2003C61A3 = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +196,6 @@
 				2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */,
 				2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */,
 				2C74A5651D9F4D8200ED3849 /* NotificationService.swift */,
-				2CCA83831D9C8B6D003C61A3 /* Timer.swift */,
 				2C74A5671D9F4D8C00ED3849 /* TimeMachine.swift */,
 				2C5D620A1D9FF540009266AC /* WatchMessageDelegate.swift */,
 				2CCA833B1D9C8AC2003C61A3 /* Main.storyboard */,
@@ -171,6 +203,9 @@
 				2CCA83401D9C8AC2003C61A3 /* LaunchScreen.storyboard */,
 				2CCA83431D9C8AC2003C61A3 /* Info.plist */,
 				2CCA83821D9C8AE5003C61A3 /* viewControllers */,
+				2C7514731DAAB4530084BD03 /* Commands */,
+				2C7514741DAAB45E0084BD03 /* Models */,
+				2CB1AE8A1DAC57D6006EDF10 /* CircleProgressView.swift */,
 			);
 			path = twentytwentytwenty;
 			sourceTree = "<group>";
@@ -204,7 +239,6 @@
 				2CCA836F1D9C8AC2003C61A3 /* Info.plist */,
 				2CCA83651D9C8AC2003C61A3 /* Supporting Files */,
 				2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */,
-				2CACF1A21DA160E100C5AAE8 /* TimeMachineMonitor.swift */,
 			);
 			path = "twentytwentytwenty WatchKit Extension";
 			sourceTree = "<group>";
@@ -312,6 +346,7 @@
 					2CCA83331D9C8AC2003C61A3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8CAFRP4KNJ;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -321,15 +356,18 @@
 					2CCA83471D9C8AC2003C61A3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8CAFRP4KNJ;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2CCA83331D9C8AC2003C61A3;
 					};
 					2CCA83501D9C8AC2003C61A3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8CAFRP4KNJ;
+						LastSwiftMigration = 0800;
 					};
 					2CCA835F1D9C8AC2003C61A3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8CAFRP4KNJ;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -397,10 +435,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CACF1A01DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift in Sources */,
+				2CFA70A21DAC37D00027D78E /* UpdateButtonCommand.swift in Sources */,
 				2CCA83811D9C8ADF003C61A3 /* MainViewController.swift in Sources */,
+				2CB1AE8B1DAC57D6006EDF10 /* CircleProgressView.swift in Sources */,
+				2C08A3D61DA99A120098A6A3 /* StartButtonCommand.swift in Sources */,
+				2C1630201DA997DD0080E9D4 /* StartButton.swift in Sources */,
 				2C74A5681D9F4D8C00ED3849 /* TimeMachine.swift in Sources */,
+				2CFA70A41DAC3FF10027D78E /* TimerDisplay.swift in Sources */,
 				2CCA83381D9C8AC2003C61A3 /* AppDelegate.swift in Sources */,
 				2C74A5661D9F4D8200ED3849 /* NotificationService.swift in Sources */,
+				2C16301C1DA989BF0080E9D4 /* ButtonCommand.swift in Sources */,
+				2C7514721DAAB0C10084BD03 /* StopButtonCommand.swift in Sources */,
 				2C5D620B1D9FF540009266AC /* WatchMessageDelegate.swift in Sources */,
 				2CCA83841D9C8B6D003C61A3 /* Timer.swift in Sources */,
 			);
@@ -420,7 +465,6 @@
 			files = (
 				2C5D620D1DA019D2009266AC /* WatchMessageDelegate.swift in Sources */,
 				2CCA836C1D9C8AC2003C61A3 /* NotificationController.swift in Sources */,
-				2CACF1A31DA160E100C5AAE8 /* TimeMachineMonitor.swift in Sources */,
 				2CCA836A1D9C8AC2003C61A3 /* ExtensionDelegate.swift in Sources */,
 				2CCA83681D9C8AC2003C61A3 /* InterfaceController.swift in Sources */,
 			);
@@ -566,6 +610,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -580,6 +625,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -596,6 +642,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -612,6 +659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -626,6 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -638,6 +687,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -648,6 +698,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwentyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = twentytwentytwenty;
 			};
 			name = Debug;
@@ -659,6 +710,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwentyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = twentytwentytwenty;
 			};
 			name = Release;

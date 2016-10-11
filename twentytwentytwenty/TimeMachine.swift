@@ -6,21 +6,32 @@ class TimeMachine {
     var restTimer:Timer?
     var sessionTimer:Timer?
     var eyeRestDuration:Int = 2
-    var sessionDuration:Int = 5
+    var sessionDuration:Int = 10
     var labelDelegate:TimeMachineLabelDelegate?
     var active:Bool = false
     
     static let sharedInstance = TimeMachine()
-    private init() {}
+    fileprivate init() {}
     
     func activate(){
         NotificationService().notifyTimerStart()
         setActivity(true)
-        createRestTimer()
+        createSessionTimer()
+    }
+    
+    func createSessionTimer(){
+        labelDelegate?.updateUI()
+        sessionTimer = Timer(duration: sessionDuration, target: self, selector:#selector(updateSessionTimer))
+        sessionTimer?.timer.fire()
+    }
+    
+    func createRestTimer(){
+        labelDelegate?.updateUI()
+        restTimer = Timer(duration: eyeRestDuration, target: self, selector:#selector(updateRestTimer))
+        
     }
     
     @objc func updateSessionTimer(){
-        
         if let timer = sessionTimer {
             let duration = timer.duration
 
@@ -28,8 +39,9 @@ class TimeMachine {
                 flipTimers(true)
             }
             else{
-                labelDelegate?.updateLabel(String(timer.duration))
+                labelDelegate?.updateLabel(timer.duration)
                 labelDelegate?.updateProgressBar(Float(duration), duration: Float(sessionDuration))
+
                 timer.update()
             }
         }
@@ -43,14 +55,14 @@ class TimeMachine {
                 flipTimers(false)
             }
             else{
-                labelDelegate?.updateLabel(String(timer.duration))
+                labelDelegate?.updateLabel(timer.duration)
                 labelDelegate?.updateProgressBar(Float(duration), duration: Float(eyeRestDuration))
                 timer.update()
             }
         }
     }
     
-    func flipTimers(resting:Bool){
+    func flipTimers(_ resting:Bool){
         if resting == true{
             rest()
             
@@ -79,36 +91,25 @@ class TimeMachine {
         
     }
     
-    func createSessionTimer(){
-        labelDelegate?.resetProgressBar()
-        sessionTimer = Timer(duration: sessionDuration, target: self, selector:#selector(updateSessionTimer))
-        
-    }
-
-    func createRestTimer(){
-        labelDelegate?.resetProgressBar()
-        restTimer = Timer(duration: eyeRestDuration, target: self, selector:#selector(updateRestTimer))
-        
-    }
-    
-    func updateLabels(timer:Timer){
-        labelDelegate?.updateLabel(String(timer.duration))
+    func updateLabels(_ timer:Timer){
+        labelDelegate?.updateLabel(timer.duration)
         
     }
     
     func killTimers(){
         NotificationService().notifyTimerEnd()
-
         setActivity(false)
         restTimer?.stop()
         sessionTimer?.stop()
+        labelDelegate?.updateUI()
+
     }
     
     func isActive () -> Bool {
         return active
     }
     
-    func setActivity(active:Bool){
+    func setActivity(_ active:Bool){
         self.active = active
     }
 

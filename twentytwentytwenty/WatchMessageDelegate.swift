@@ -1,20 +1,22 @@
 import Foundation
 import WatchConnectivity
+import NotificationCenter
 
 class WatchMessageDelegate: NSObject, WCSessionDelegate {
     var session:WCSession?
     static let sharedInstance = WatchMessageDelegate()
-    private override init() {}
+    var delegate:TimeMachineLabelDelegate?
+    fileprivate override init() {}
     
     func startSession(){
-        session = WCSession.defaultSession()
+        session = WCSession.default()
         session?.delegate = self
-        session?.activateSession()
+        session?.activate()
     }
     
-    func onMessage(alert:String){
-        if session?.reachable == true {
-            session?.sendMessage(["alert":alert],
+    func onMessage(_ alert:String){
+        if session?.isReachable == true {
+            session?.sendMessage(["timerChangingState":alert],
                 replyHandler: { response in print(response)},
                 errorHandler: { error in print(error) })
         }
@@ -23,14 +25,23 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
         }
     }
     
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         if message["changeState"] != nil{
             let timemachine = TimeMachine.sharedInstance
+    
             if timemachine.isActive() == true {
-                timemachine.killTimers()
+                DispatchQueue.main.async(execute: { () -> Void in
+                    timemachine.killTimers()
+                    self.delegate?.updateUI()
+                    
+                })
             }
             else{
-                timemachine.activate()
+                DispatchQueue.main.async(execute: { () -> Void in
+                    timemachine.activate()
+                    self.delegate?.updateUI()
+                })
+                
             }
             
             replyHandler(["timerResponse":timemachine.isActive()])
@@ -40,6 +51,13 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
             replyHandler(["timerResponse":TimeMachine.sharedInstance.isActive()])
         }
     }
+    
+    func sessionDidDeactivate(_ session: WCSession) {}
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {}
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
+    
     
 
 }

@@ -2,11 +2,11 @@ import Foundation
 import UIKit
 
 class Timer {
-    var timer = NSTimer()
+    var timer = Foundation.Timer()
     var duration:Int
     
     init(duration:Int, target:AnyObject, selector:Selector){
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: target, selector: selector, userInfo: nil, repeats: true)
+        timer = Foundation.Timer.scheduledTimer(timeInterval: 1.0, target: target, selector: selector, userInfo: nil, repeats: true)
         self.duration = duration
     }
     
@@ -25,7 +25,7 @@ class Timer {
     }
     
     func isActive() -> Bool {
-        return self.timer.valid
+        return self.timer.isValid
     }
     
     

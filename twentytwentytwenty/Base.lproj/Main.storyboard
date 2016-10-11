@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -15,59 +16,71 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN7-od-89p">
-                                <rect key="frame" x="216" y="243" width="32" height="30"/>
-                                <state key="normal" title="Stop"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JL8-H2-X2Q" customClass="StartButton" customModule="twentytwentytwenty" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.45145285129547119" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="stopWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezm-ND-R1p"/>
+                                    <action selector="startButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPq-kH-Fjv"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-oR-V10">
-                                <rect key="frame" x="84" y="396" width="153" height="50"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9E-z8-hXl" customClass="CircleProgressView" customModule="twentytwentytwenty" customModuleProvider="target">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-oR-V10">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="5f1-Jx-lNs"/>
+                                            <constraint firstAttribute="height" constant="50" id="O5z-SC-cl6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                        <color key="textColor" red="0.80392156862745101" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="5f1-Jx-lNs"/>
-                                    <constraint firstAttribute="height" constant="50" id="O5z-SC-cl6"/>
+                                    <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="i9E-z8-hXl" secondAttribute="centerX" id="VZg-Zo-bNR"/>
+                                    <constraint firstItem="fYb-oR-V10" firstAttribute="centerY" secondItem="i9E-z8-hXl" secondAttribute="centerY" id="YgC-As-Dkq"/>
+                                    <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="i9E-z8-hXl" secondAttribute="centerX" id="xYe-ly-fZF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOW-P8-Wcy">
-                                <rect key="frame" x="80" y="243" width="34" height="30"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADB-ms-vn6"/>
-                                </connections>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xo1-AA-bhU">
-                                <rect key="frame" x="84" y="504" width="152" height="2"/>
-                            </progressView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseColor">
+                                        <color key="value" red="1" green="0.21482703959999999" blue="0.24094367820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="0.45145285129547119" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" red="1" green="0.33333333333333331" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="qN7-od-89p" secondAttribute="trailing" constant="56" id="13l-sg-oeB"/>
-                            <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3WU-Qa-2Jx"/>
-                            <constraint firstItem="xo1-AA-bhU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5c2-DE-8RS"/>
-                            <constraint firstItem="FOW-P8-Wcy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="8Sq-nC-i6P"/>
-                            <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PQk-zk-NS1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fYb-oR-V10" secondAttribute="bottom" constant="122" id="cfH-El-tI2"/>
-                            <constraint firstItem="FOW-P8-Wcy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-26" id="cxz-Z2-olX"/>
-                            <constraint firstItem="xo1-AA-bhU" firstAttribute="top" secondItem="fYb-oR-V10" secondAttribute="bottom" constant="58" id="eCZ-ci-ozM"/>
-                            <constraint firstItem="FOW-P8-Wcy" firstAttribute="baseline" secondItem="qN7-od-89p" secondAttribute="baseline" id="oqo-2h-3n3"/>
-                            <constraint firstItem="xo1-AA-bhU" firstAttribute="leading" secondItem="fYb-oR-V10" secondAttribute="leading" id="uaX-LN-BZN"/>
+                            <constraint firstItem="i9E-z8-hXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Nm-ZO-0cZ"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="520" id="3Wb-tb-brA"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9d-nX-Bmn"/>
+                            <constraint firstItem="i9E-z8-hXl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fhC-7S-QYO"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="224" id="lEL-7w-XDH"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="top" secondItem="i9E-z8-hXl" secondAttribute="bottom" constant="17" id="qVy-Ns-4kZ"/>
+                            <constraint firstItem="i9E-z8-hXl" firstAttribute="centerX" secondItem="JL8-H2-X2Q" secondAttribute="centerX" id="tgm-Yl-glk"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="x0L-8P-xhY"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="224" id="x7W-1I-llW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="circleProgressView" destination="i9E-z8-hXl" id="zJX-nN-dH8"/>
                         <outlet property="displayLabel" destination="fYb-oR-V10" id="RLq-hd-bSb"/>
-                        <outlet property="progressView" destination="xo1-AA-bhU" id="oxW-tC-FMW"/>
+                        <outlet property="startButtonControl" destination="JL8-H2-X2Q" id="AVj-Qz-VJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="406"/>
+            <point key="canvasLocation" x="161.5" y="405.5"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

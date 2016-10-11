@@ -10,17 +10,17 @@ class NotificationService {
         localNote.alertAction = "action"
         localNote.alertTitle = "hey bud"
         localNote.category = "myCategory"
-        localNote.fireDate = NSDate().dateByAddingTimeInterval(1)
+        localNote.fireDate = Date().addingTimeInterval(1)
         
-        UIApplication.sharedApplication().scheduleLocalNotification(localNote)
+        UIApplication.shared.scheduleLocalNotification(localNote)
     }
     
     func notifyTimerStart(){
-        WatchMessageDelegate.sharedInstance.onMessage("off")
+        WatchMessageDelegate.sharedInstance.onMessage("on")
     }
     
     func notifyTimerEnd(){
-        WatchMessageDelegate.sharedInstance.onMessage("on")
+        WatchMessageDelegate.sharedInstance.onMessage("off")
 
     }
     

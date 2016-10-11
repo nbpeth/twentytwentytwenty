@@ -2,42 +2,42 @@ import WatchConnectivity
 import Foundation
 
 class WatchMessageDelegate: NSObject, WCSessionDelegate {
+    static let sharedInstance = WatchMessageDelegate()
     var interfaceDelegate: InterfaceDelegate? = nil
     var session:WCSession?
+    fileprivate override init() {}
     
-    init(delegate:InterfaceDelegate){
-        self.interfaceDelegate = delegate
-    }
-    
-    func activateSession(){
-        session = WCSession.defaultSession()
-        session?.delegate = self
-        session?.activateSession()
-        
-        print("activating session  \(session?.reachable)   ")
-        
-    }
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        if let alert = message["alert"] as? String{
-            if alert == "on"{
-                self.interfaceDelegate?.changeState(alert)
-            }
-            else if alert == "off"{
-                self.interfaceDelegate?.changeState(alert)
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
 
-            }
-            
+        onMessage("getTimerState")        
+    }
+
+    func activateSession(){
+        session = WCSession.default()
+        session?.delegate = self
+        session?.activate()
+        
+        print("activating session  \(session?.isReachable)   ")
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        if let alert = message["timerChangingState"] as? String{
+
+            self.interfaceDelegate?.setState(alert)
+
         }
     }
     
-    func onMessage(message:String){
-        if session?.reachable == true {
+    func onMessage(_ message:String, changeState:Bool = false){
+        if session?.isReachable == true {
             session?.sendMessage([message:""],
                 replyHandler: { response in
-                    if let stateResponse = response["changeState"] as? String {
-                        let state = stateResponse == "0" ? "on" : "off"
-                        self.interfaceDelegate?.changeState(state)
+                    if let stateResponse = response["timerResponse"] as? Int {
+                        let state = stateResponse == 0 ? "off" : "on"
+                        
+                        self.interfaceDelegate?.setState(state)
+
                 }
                     
                 print(response)},
@@ -48,7 +48,7 @@ class WatchMessageDelegate: NSObject, WCSessionDelegate {
         }
     }
     
-    func sendTimerMessage(requestMessage:String){
+    func sendTimerMessage(_ requestMessage:String){
         return onMessage(requestMessage)
     }
 
