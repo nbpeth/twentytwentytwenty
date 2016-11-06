@@ -11,7 +11,7 @@ class MainViewController: UIViewController, TimeMachineLabelDelegate {
     @IBAction func startButtonWasPressed(_ sender: AnyObject) {
         pressButton()
     }
-   
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -19,10 +19,14 @@ class MainViewController: UIViewController, TimeMachineLabelDelegate {
 
     }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     func updateUI(){
         circleProgressView?.moveit(value: 1)
         displayLabel.text = ""
-        UpdateButtonCommand(button: startButtonControl).pressButton()
+        UpdateButtonCommand(button: startButtonControl).execute()
     }
     
     func setDelegate(){
@@ -47,7 +51,7 @@ class MainViewController: UIViewController, TimeMachineLabelDelegate {
             command = StopButtonCommand(button:startButtonControl)
         }
         
-        command?.pressButton()
+        command?.execute()
     }
     
     

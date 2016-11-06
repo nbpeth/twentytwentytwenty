@@ -8,7 +8,7 @@ class UpdateButtonCommand : ButtonCommand {
         self.button = button
     }
     
-    func pressButton(){
+    func execute(){
         if let startButton = button {
             startButton.updateUI()
         }

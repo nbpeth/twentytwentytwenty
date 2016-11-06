@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -38,6 +38,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.9991036057472229" green="0.31794038414955139" blue="0.30479630827903748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="fYb-oR-V10" firstAttribute="centerX" secondItem="i9E-z8-hXl" secondAttribute="centerX" id="VZg-Zo-bNR"/>
                                     <constraint firstItem="fYb-oR-V10" firstAttribute="centerY" secondItem="i9E-z8-hXl" secondAttribute="centerY" id="YgC-As-Dkq"/>
@@ -52,15 +53,33 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-1K-ZIs">
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="150"/>
+                                <color key="textColor" red="0.45145285129547119" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkc-c1-Osl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="y6d-ch-Kbx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="31"/>
+                                <color key="textColor" red="0.9991036057472229" green="0.31794038414955139" blue="0.30479630827903748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="1" green="0.33333333333333331" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i9E-z8-hXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Nm-ZO-0cZ"/>
                             <constraint firstItem="JL8-H2-X2Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="520" id="3Wb-tb-brA"/>
+                            <constraint firstItem="pWT-1K-ZIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Wt-Db-ORJ"/>
+                            <constraint firstItem="Gkc-c1-Osl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="KJ6-V4-ILH"/>
                             <constraint firstItem="JL8-H2-X2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9d-nX-Bmn"/>
+                            <constraint firstItem="JL8-H2-X2Q" firstAttribute="top" secondItem="pWT-1K-ZIs" secondAttribute="bottom" constant="309" id="UgJ-Ji-RHi"/>
                             <constraint firstItem="i9E-z8-hXl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fhC-7S-QYO"/>
                             <constraint firstItem="JL8-H2-X2Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="224" id="lEL-7w-XDH"/>
+                            <constraint firstItem="Gkc-c1-Osl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="mT4-Ab-l7G"/>
+                            <constraint firstItem="pWT-1K-ZIs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-7" id="pWg-Bv-drp"/>
                             <constraint firstItem="JL8-H2-X2Q" firstAttribute="top" secondItem="i9E-z8-hXl" secondAttribute="bottom" constant="17" id="qVy-Ns-4kZ"/>
                             <constraint firstItem="i9E-z8-hXl" firstAttribute="centerX" secondItem="JL8-H2-X2Q" secondAttribute="centerX" id="tgm-Yl-glk"/>
                             <constraint firstItem="JL8-H2-X2Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="x0L-8P-xhY"/>

@@ -5,8 +5,8 @@ import UIKit
 class TimeMachine {
     var restTimer:Timer?
     var sessionTimer:Timer?
-    var eyeRestDuration:Int = 2
-    var sessionDuration:Int = 10
+    var eyeRestDuration:Int = 20
+    var sessionDuration:Int = 1200
     var labelDelegate:TimeMachineLabelDelegate?
     var active:Bool = false
     

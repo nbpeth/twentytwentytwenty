@@ -21,7 +21,7 @@ class NotificationController: WKUserNotificationInterfaceController {
     
     override func didReceive(_ localNotification: UILocalNotification, withCompletion completionHandler: (@escaping (WKUserNotificationInterfaceType) -> Void)) {
         alertTypeLabel.setText(localNotification.alertBody)
-        
+        WKInterfaceDevice.current().play(.notification)
         completionHandler(.custom)
     }
  

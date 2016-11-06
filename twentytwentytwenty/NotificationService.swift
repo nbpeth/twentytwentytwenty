@@ -6,9 +6,9 @@ class NotificationService {
     func notifyRest(){
         
         let localNote = UILocalNotification()
-        localNote.alertBody = "Rest your eyes"
+        localNote.alertBody = "Look at anything 20 yards away for 20 seconds"
         localNote.alertAction = "action"
-        localNote.alertTitle = "hey bud"
+        localNote.alertTitle = "Rest Your Eyes"
         localNote.category = "myCategory"
         localNote.fireDate = Date().addingTimeInterval(1)
         

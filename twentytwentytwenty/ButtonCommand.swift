@@ -1,5 +1,5 @@
 import Foundation
 
 protocol ButtonCommand {
-    func pressButton();
+    func execute();
 }

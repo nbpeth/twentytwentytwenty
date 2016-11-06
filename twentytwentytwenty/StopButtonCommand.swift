@@ -1,7 +1,8 @@
+
 import Foundation
 
-class StartButtonCommand : NSObject, ButtonCommand {
-    let button:StartButton?
+class StopButtonCommand:ButtonCommand {
+    var button:StartButton?
     
     init(button:StartButton){
         self.button = button
@@ -9,7 +10,8 @@ class StartButtonCommand : NSObject, ButtonCommand {
     
     func execute() {
         if let startButton = button {
-            startButton.start()
+            startButton.stop()
         }
     }
+    
 }
