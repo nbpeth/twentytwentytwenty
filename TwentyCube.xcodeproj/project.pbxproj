@@ -22,16 +22,16 @@
 		2CCA833F1D9C8AC2003C61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA833E1D9C8AC2003C61A3 /* Assets.xcassets */; };
 		2CCA83421D9C8AC2003C61A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA83401D9C8AC2003C61A3 /* LaunchScreen.storyboard */; };
 		2CCA834D1D9C8AC2003C61A3 /* twentytwentytwentyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA834C1D9C8AC2003C61A3 /* twentytwentytwentyUITests.swift */; };
-		2CCA83521D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CCA83511D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App.app */; };
+		2CCA83521D9C8AC2003C61A3 /* 20^3 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CCA83511D9C8AC2003C61A3 /* 20^3 WatchKit App.app */; };
 		2CCA83581D9C8AC2003C61A3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA83561D9C8AC2003C61A3 /* Interface.storyboard */; };
 		2CCA835A1D9C8AC2003C61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA83591D9C8AC2003C61A3 /* Assets.xcassets */; };
-		2CCA83611D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CCA83601D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2CCA83681D9C8AC2003C61A3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83671D9C8AC2003C61A3 /* InterfaceController.swift */; };
 		2CCA836A1D9C8AC2003C61A3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83691D9C8AC2003C61A3 /* ExtensionDelegate.swift */; };
 		2CCA836C1D9C8AC2003C61A3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA836B1D9C8AC2003C61A3 /* NotificationController.swift */; };
 		2CCA836E1D9C8AC2003C61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA836D1D9C8AC2003C61A3 /* Assets.xcassets */; };
 		2CCA83811D9C8ADF003C61A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83801D9C8ADF003C61A3 /* MainViewController.swift */; };
 		2CCA83841D9C8B6D003C61A3 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA83831D9C8B6D003C61A3 /* Timer.swift */; };
+		2CD403771DCFF72D007A5DF6 /* 20^3 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CCA83601D9C8AC2003C61A3 /* 20^3 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2CFA70A21DAC37D00027D78E /* UpdateButtonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA70A11DAC37D00027D78E /* UpdateButtonCommand.swift */; };
 		2CFA70A41DAC3FF10027D78E /* TimerDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA70A31DAC3FF10027D78E /* TimerDisplay.swift */; };
 /* End PBXBuildFile section */
@@ -51,36 +51,36 @@
 			remoteGlobalIDString = 2CCA83501D9C8AC2003C61A3;
 			remoteInfo = "twentytwentytwenty WatchKit App";
 		};
-		2CCA83621D9C8AC2003C61A3 /* PBXContainerItemProxy */ = {
+		2CD403781DCFF72D007A5DF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CCA832C1D9C8AC2003C61A3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2CCA835F1D9C8AC2003C61A3;
-			remoteInfo = "twentytwentytwenty WatchKit Extension";
+			remoteInfo = "20^3 WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2CCA83751D9C8AC2003C61A3 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				2CCA83611D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2CCA83791D9C8AC2003C61A3 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				2CCA83521D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App.app in Embed Watch Content */,
+				2CCA83521D9C8AC2003C61A3 /* 20^3 WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD4037A1DCFF72D007A5DF6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CD403771DCFF72D007A5DF6 /* 20^3 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -96,20 +96,20 @@
 		2C7514711DAAB0C10084BD03 /* StopButtonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopButtonCommand.swift; sourceTree = "<group>"; };
 		2CACF19F1DA1585A00C5AAE8 /* TimeMachineLabelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineLabelDelegate.swift; sourceTree = "<group>"; };
 		2CB1AE8A1DAC57D6006EDF10 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
-		2CCA83341D9C8AC2003C61A3 /* twentytwentytwenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twentytwentytwenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCA83341D9C8AC2003C61A3 /* 20^3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20^3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA83371D9C8AC2003C61A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCA833C1D9C8AC2003C61A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CCA833E1D9C8AC2003C61A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CCA83411D9C8AC2003C61A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CCA83431D9C8AC2003C61A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CCA83481D9C8AC2003C61A3 /* twentytwentytwentyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twentytwentytwentyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCA83481D9C8AC2003C61A3 /* 20^3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20^3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA834C1D9C8AC2003C61A3 /* twentytwentytwentyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twentytwentytwentyUITests.swift; sourceTree = "<group>"; };
 		2CCA834E1D9C8AC2003C61A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CCA83511D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twentytwentytwenty WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCA83511D9C8AC2003C61A3 /* 20^3 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20^3 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA83571D9C8AC2003C61A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2CCA83591D9C8AC2003C61A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CCA835B1D9C8AC2003C61A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CCA83601D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "twentytwentytwenty WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCA83601D9C8AC2003C61A3 /* 20^3 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "20^3 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA83661D9C8AC2003C61A3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		2CCA83671D9C8AC2003C61A3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		2CCA83691D9C8AC2003C61A3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				2CCA83361D9C8AC2003C61A3 /* twentytwentytwenty */,
 				2CCA834B1D9C8AC2003C61A3 /* twentytwentytwentyUITests */,
 				2CCA83551D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App */,
-				2CCA83641D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension */,
+				2CCA83641D9C8AC2003C61A3 /* TwentyCube WatchKit Extension */,
 				2CCA83351D9C8AC2003C61A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,10 +182,10 @@
 		2CCA83351D9C8AC2003C61A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CCA83341D9C8AC2003C61A3 /* twentytwentytwenty.app */,
-				2CCA83481D9C8AC2003C61A3 /* twentytwentytwentyUITests.xctest */,
-				2CCA83511D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App.app */,
-				2CCA83601D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension.appex */,
+				2CCA83341D9C8AC2003C61A3 /* 20^3.app */,
+				2CCA83481D9C8AC2003C61A3 /* 20^3UITests.xctest */,
+				2CCA83511D9C8AC2003C61A3 /* 20^3 WatchKit App.app */,
+				2CCA83601D9C8AC2003C61A3 /* 20^3 WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			path = "twentytwentytwenty WatchKit App";
 			sourceTree = "<group>";
 		};
-		2CCA83641D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension */ = {
+		2CCA83641D9C8AC2003C61A3 /* TwentyCube WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				2CCA83671D9C8AC2003C61A3 /* InterfaceController.swift */,
@@ -240,6 +240,7 @@
 				2CCA83651D9C8AC2003C61A3 /* Supporting Files */,
 				2C5D620C1DA019D2009266AC /* WatchMessageDelegate.swift */,
 			);
+			name = "TwentyCube WatchKit Extension";
 			path = "twentytwentytwenty WatchKit Extension";
 			sourceTree = "<group>";
 		};
@@ -262,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CCA83331D9C8AC2003C61A3 /* twentytwentytwenty */ = {
+		2CCA83331D9C8AC2003C61A3 /* 20^3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCA837A1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty" */;
+			buildConfigurationList = 2CCA837A1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3" */;
 			buildPhases = (
 				2CCA83301D9C8AC2003C61A3 /* Sources */,
 				2CCA83311D9C8AC2003C61A3 /* Frameworks */,
@@ -276,14 +277,14 @@
 			dependencies = (
 				2CCA83541D9C8AC2003C61A3 /* PBXTargetDependency */,
 			);
-			name = twentytwentytwenty;
+			name = "20^3";
 			productName = twentytwentytwenty;
-			productReference = 2CCA83341D9C8AC2003C61A3 /* twentytwentytwenty.app */;
+			productReference = 2CCA83341D9C8AC2003C61A3 /* 20^3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2CCA83471D9C8AC2003C61A3 /* twentytwentytwentyUITests */ = {
+		2CCA83471D9C8AC2003C61A3 /* 20^3UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCA837D1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwentyUITests" */;
+			buildConfigurationList = 2CCA837D1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3UITests" */;
 			buildPhases = (
 				2CCA83441D9C8AC2003C61A3 /* Sources */,
 				2CCA83451D9C8AC2003C61A3 /* Frameworks */,
@@ -294,31 +295,31 @@
 			dependencies = (
 				2CCA834A1D9C8AC2003C61A3 /* PBXTargetDependency */,
 			);
-			name = twentytwentytwentyUITests;
+			name = "20^3UITests";
 			productName = twentytwentytwentyUITests;
-			productReference = 2CCA83481D9C8AC2003C61A3 /* twentytwentytwentyUITests.xctest */;
+			productReference = 2CCA83481D9C8AC2003C61A3 /* 20^3UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2CCA83501D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App */ = {
+		2CCA83501D9C8AC2003C61A3 /* 20^3 WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCA83761D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty WatchKit App" */;
+			buildConfigurationList = 2CCA83761D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3 WatchKit App" */;
 			buildPhases = (
 				2CCA834F1D9C8AC2003C61A3 /* Resources */,
-				2CCA83751D9C8AC2003C61A3 /* Embed App Extensions */,
+				2CD4037A1DCFF72D007A5DF6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2CCA83631D9C8AC2003C61A3 /* PBXTargetDependency */,
+				2CD403791DCFF72D007A5DF6 /* PBXTargetDependency */,
 			);
-			name = "twentytwentytwenty WatchKit App";
+			name = "20^3 WatchKit App";
 			productName = "twentytwentytwenty WatchKit App";
-			productReference = 2CCA83511D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App.app */;
+			productReference = 2CCA83511D9C8AC2003C61A3 /* 20^3 WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		2CCA835F1D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension */ = {
+		2CCA835F1D9C8AC2003C61A3 /* 20^3 WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CCA83721D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty WatchKit Extension" */;
+			buildConfigurationList = 2CCA83721D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3 WatchKit Extension" */;
 			buildPhases = (
 				2CCA835C1D9C8AC2003C61A3 /* Sources */,
 				2CCA835D1D9C8AC2003C61A3 /* Frameworks */,
@@ -328,9 +329,9 @@
 			);
 			dependencies = (
 			);
-			name = "twentytwentytwenty WatchKit Extension";
+			name = "20^3 WatchKit Extension";
 			productName = "twentytwentytwenty WatchKit Extension";
-			productReference = 2CCA83601D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension.appex */;
+			productReference = 2CCA83601D9C8AC2003C61A3 /* 20^3 WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -371,7 +372,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CCA832F1D9C8AC2003C61A3 /* Build configuration list for PBXProject "twentytwentytwenty" */;
+			buildConfigurationList = 2CCA832F1D9C8AC2003C61A3 /* Build configuration list for PBXProject "TwentyCube" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -384,10 +385,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CCA83331D9C8AC2003C61A3 /* twentytwentytwenty */,
-				2CCA83471D9C8AC2003C61A3 /* twentytwentytwentyUITests */,
-				2CCA83501D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App */,
-				2CCA835F1D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension */,
+				2CCA83331D9C8AC2003C61A3 /* 20^3 */,
+				2CCA83471D9C8AC2003C61A3 /* 20^3UITests */,
+				2CCA83501D9C8AC2003C61A3 /* 20^3 WatchKit App */,
+				2CCA835F1D9C8AC2003C61A3 /* 20^3 WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -475,18 +476,18 @@
 /* Begin PBXTargetDependency section */
 		2CCA834A1D9C8AC2003C61A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2CCA83331D9C8AC2003C61A3 /* twentytwentytwenty */;
+			target = 2CCA83331D9C8AC2003C61A3 /* 20^3 */;
 			targetProxy = 2CCA83491D9C8AC2003C61A3 /* PBXContainerItemProxy */;
 		};
 		2CCA83541D9C8AC2003C61A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2CCA83501D9C8AC2003C61A3 /* twentytwentytwenty WatchKit App */;
+			target = 2CCA83501D9C8AC2003C61A3 /* 20^3 WatchKit App */;
 			targetProxy = 2CCA83531D9C8AC2003C61A3 /* PBXContainerItemProxy */;
 		};
-		2CCA83631D9C8AC2003C61A3 /* PBXTargetDependency */ = {
+		2CD403791DCFF72D007A5DF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2CCA835F1D9C8AC2003C61A3 /* twentytwentytwenty WatchKit Extension */;
-			targetProxy = 2CCA83621D9C8AC2003C61A3 /* PBXContainerItemProxy */;
+			target = 2CCA835F1D9C8AC2003C61A3 /* 20^3 WatchKit Extension */;
+			targetProxy = 2CD403781DCFF72D007A5DF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -606,7 +607,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "twentytwentytwenty WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.TwentyCube.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -621,7 +622,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "twentytwentytwenty WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.TwentyCube.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -634,11 +635,12 @@
 		2CCA83771D9C8AC2003C61A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = twentytwentytwenty_WatchKit_Extension;
 				INFOPLIST_FILE = "twentytwentytwenty WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.TwentyCube.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -651,11 +653,12 @@
 		2CCA83781D9C8AC2003C61A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = twentytwentytwenty_WatchKit_Extension;
 				INFOPLIST_FILE = "twentytwentytwenty WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.TwentyCube.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -672,7 +675,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = twentytwentytwenty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.TwentyCube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -685,7 +688,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = twentytwentytwenty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.twentytwentytwenty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budmanstrong.TwentyCube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -718,7 +721,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CCA832F1D9C8AC2003C61A3 /* Build configuration list for PBXProject "twentytwentytwenty" */ = {
+		2CCA832F1D9C8AC2003C61A3 /* Build configuration list for PBXProject "TwentyCube" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCA83701D9C8AC2003C61A3 /* Debug */,
@@ -727,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCA83721D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty WatchKit Extension" */ = {
+		2CCA83721D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3 WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCA83731D9C8AC2003C61A3 /* Debug */,
@@ -736,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCA83761D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty WatchKit App" */ = {
+		2CCA83761D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3 WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCA83771D9C8AC2003C61A3 /* Debug */,
@@ -745,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCA837A1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwenty" */ = {
+		2CCA837A1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCA837B1D9C8AC2003C61A3 /* Debug */,
@@ -754,7 +757,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CCA837D1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "twentytwentytwentyUITests" */ = {
+		2CCA837D1D9C8AC2003C61A3 /* Build configuration list for PBXNativeTarget "20^3UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CCA837E1D9C8AC2003C61A3 /* Debug */,
