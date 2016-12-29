@@ -11,7 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_0_3_WatchKit_Extension">
                     <items>
-                        <label width="136" alignment="left" text="Alert Me" textAlignment="center" id="oRK-pX-ouD"/>
+                        <label width="136" alignment="left" text="Alerts" textAlignment="center" id="oRK-pX-ouD"/>
                         <button width="1" alignment="left" id="5Dx-to-uRU">
                             <connections>
                                 <action selector="changeStateButtonWasPressed" destination="AgC-eL-Hgc" id="K0E-P5-JqR"/>
@@ -54,7 +54,7 @@
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
                     </items>
-                    <color key="backgroundColor" red="1" green="0.21482703959999999" blue="0.24094367820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.45145285129547119" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="alertTypeLabel" destination="Cfh-Fy-69D" id="2Yv-Wf-Ben"/>
                     </connections>
